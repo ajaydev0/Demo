@@ -11,3 +11,16 @@ class StoryModel {
     this.onTap,
   });
 }
+
+//Followers Model
+class FollowersModel {
+  String? name;
+  String? imageUrl;
+  Function? onTap;
+
+  FollowersModel({
+    this.imageUrl,
+    this.name,
+    this.onTap,
+  });
+}

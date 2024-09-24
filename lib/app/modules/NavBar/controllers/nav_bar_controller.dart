@@ -1,21 +1,17 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../ProfilePage/view/profilePage_view.dart';
 
-
-
 class NavBarController extends GetxController {
-  RxInt currentindex = 0.obs;
+   final GlobalKey<ScaffoldState> globalKey = GlobalKey<ScaffoldState>();
+
+  RxInt currentIndex = 3.obs;
 
   List pages = [
-    // const HomePageView(),
-    Container(color: Colors.grey),
-    Container(color: Colors.grey),
-    Container(color: Colors.grey),
-    Container(color: Colors.grey),
-    // const CartPageView(),
+    Container(color: Colors.green),
+    Container(color: Colors.yellow),
+    Container(color: Colors.amber),
     const ProfilePageView()
   ];
 }
