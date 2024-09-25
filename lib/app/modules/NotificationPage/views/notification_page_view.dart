@@ -10,12 +10,14 @@ class NotificationPageView extends GetView<NotificationPageController> {
   const NotificationPageView({super.key});
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-        onWillPop: () {
-          Exit_DialogBox(context);
-          return Future.value(false);
-        },
-        child: Scaffold(
+    return
+    //  WillPopScope(
+    //     onWillPop: () {
+    //       Exit_DialogBox(context);
+    //       return Future.value(false);
+    //     },
+    //     child:
+         Scaffold(
             appBar: AppBar(
               // title: Ktext(text: "Notification"),
               // centerTitle: true,
@@ -130,6 +132,9 @@ class NotificationPageView extends GetView<NotificationPageController> {
                 ),
                 const SizedBox(height: 20),
               ],
-            )));
+            )
+            // )
+
+            );
   }
 }
